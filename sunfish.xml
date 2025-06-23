@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!--Remotes-->
-    <remote name="los"            fetch="https://github.com/LineageOS"           revision="lineage-22.2" />
-    <remote name="muppets"        fetch="https://github.com/TheMuppets"          revision="lineage-22.2" />
+    <remote name="los"       fetch="https://github.com/LineageOS"        revision="lineage-22.2" />
+    <remote name="muppets"   fetch="https://github.com/TheMuppets"       revision="lineage-22.2" />
+    <remote name="gh"        fetch="https://github.com/apelete"          revision="lineage-22.2" />
 
     <!--Devices Trees-->
     <project name="android_device_google_gs-common"         path="device/google/gs-common"     remote="los" />
-    <project name="android_device_google_sunfish"           path="device/google/sunfish"       remote="los" />
+    <project name="android_device_google_sunfish"           path="device/google/sunfish"       remote="gh" />
 
     <!--Vendors Tree-->
-    <project name="proprietary_vendor_google_sunfish"       path="vendor/google/sunfish"       remote="muppets" />
+    <project name="proprietary_vendor_google_sunfish"       path="vendor/google/sunfish"       remote="gh" />
 
     <!--Kernel Tree-->
     <project name="android_kernel_google_msm-4.14"          path="kernel/google/msm-4.14"      remote="los" />
